@@ -123,6 +123,22 @@ climate:
     power_sensor: binary_sensor.ac_power
 ```
 
+## Example (using ZHA controller):
+```yaml
+smartir:
+
+climate:
+  - platform: smartir
+    name: Office AC
+    unique_id: office_ac
+    device_code: 4209
+    controller_data: 34:21:00:ff:fe:00:4c:28
+    temperature_sensor: sensor.office_ac_temperature
+    humidity_sensor: sensor.office_ac_humidity
+    power_sensor: binary_sensor.office_ac_power
+```
+
+
 ## Available codes for climate devices:
 The following are the code files created by the amazing people in the community. Before you start creating your own code file, try if one of them works for your device. **Please open an issue if your device is working and not included in the supported models.**
 Contributing to your own code files is welcome. However, we do not accept incomplete files as well as files related to MQTT controllers.
@@ -391,6 +407,7 @@ Contributing to your own code files is welcome. However, we do not accept incomp
 | [1406](../codes/climate/1406.json) | AQV12PWD         | Xiaomi     |
 | [1407](../codes/climate/1407.json) | AR##NXWS###      | Broadlink  |
 | [1408](../codes/climate/1408.json) | AR18HSFSAWKNEU Ver.01 (DB93-15169D remote) | Broadlink  |
+| [1409](../codes/climate/1409.json) | AR##NXWS###      | ZHA        |
 
 #### Sintech
 | Code                               | Supported Models | Controller |
